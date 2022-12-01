@@ -4,43 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Lato:wght@400;700;900&family=Montserrat:wght@500;700&family=Public+Sans:wght@400;500;600;800&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 <body>
     <!--Header-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">ANA SAYFA</a></li>
-                <li><a href="#">HAKKIMIZDA</a></li>
-                <li><a href="#">YÖNETİM</a></li>
-                <li><a href="#">PERSONEL</a></li>
-                <li><a href="#">KURULLAR</a></li>
-                <li><a href="#">MÜDEK</a></li>
+    <header class="page-header">
+        <nav class="site-nav">
+            <ul class="site-nav__list accent-list">
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">ANA SAYFA</a></li>
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">HAKKIMIZDA</a></li>
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">YÖNETİM</a></li>
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">PERSONEL</a></li>
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">KURULLAR</a></li>
+                <li class="site-nav__item accent-list__item">
+                    <a href="#" class="site-nav__link accent-list__link">MÜDEK</a></li>
             </ul>
-            <ul>
-                <li><a href="#">BÖLÜMLERİMİZ</a></li>
-                <li><a href="#">DOKÜMANLAR</a></li>
-                <li><a href="#">İLETİŞİM</a></li>
-                <li><a href="#">TR/EN</a></li>
+            <ul class="site-nav__list">
+                <li class="site-nav__item"><a href="#" class="site-nav__link">BÖLÜMLERİMİZ</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">DOKÜMANLAR</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">İLETİŞİM</a></li>
+                <li class="site-nav__item"><a href="#" class="site-nav__link">TR/EN</a></li>
             </ul>
         </nav>
-        <div>
-            <h2>MÜHENDİSLİK FAKÜLTESİ</h2>
+        <div class="logo-container">
+            <div class="logo">
+                <!-- <h2 class="logo__name">MÜHENDİSLİK FAKÜLTESİ</h2> -->
+                <a href="#" class="logo__name">MÜHENDİSLİK <span>FAKÜLTESİ</span></a>
+                <!-- mb change to the link - tag a -->
+            </div>
+            <div class="logo-figure"></div>
         </div>
     </header>
     <!-- Main -->
     <main>
         <!-- Hero -->
-        <section>
-            <h1><span>FIRAT ÜNİVERSİTESİ</span> MÜHENDİSLİKTE 50. YILINDA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Purus semper vitae neque quam.</p>
-            <button>KEŞFET</button>
+        <section class="section hero">
+            <div class="container">
+                <h1 class="hero-title"><span class="hero-title__accent">FIRAT ÜNİVERSİTESİ</span> MÜHENDİSLİKTE 50. YILINDA</h1>
+                <p class="hero-paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Purus semper vitae neque quam.</p>
+                <button type="button" class="button hero-button">KEŞFET</button>
+            </div>
         </section>
         <!-- About us -->
-        <section>
+        <section class="section">
             <h4>HAKKIMIZDA</h4>
             <div>
                 <div><img src="" alt="" width="" /></div>
@@ -87,7 +106,7 @@
             </ul> -->
         </section>
         <!-- Announcements -->
-        <section>
+        <section class="section">
             <h3>DUYURULAR</h3>
             <ul>
                 <li>
@@ -116,7 +135,7 @@
             </ul>
         </section>
         <!-- Fast access -->
-        <section>
+        <section class="section">
             <h3>HIZLI ERİŞİM</h3>
             <ul>
                 <li><a href="">Etkinlikler</a></li>
@@ -127,7 +146,7 @@
             </ul>
         </section>
         <!-- News -->
-        <section>
+        <section class="section">
             <h3>HABERLER</h3>
             <ul>
                 <li>
@@ -173,7 +192,7 @@
             </ul>
         </section>
         <!-- About IT industry -->
-        <section>
+        <section class="section">
             <div><img src="" alt=""></div>
             <div>
                 <h2>BT Çözüm Endüstrisini Geri Tutan Nedir?</h2>
