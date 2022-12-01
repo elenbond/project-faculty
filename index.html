@@ -52,31 +52,36 @@
         <!-- Hero -->
         <section class="section hero">
             <div class="container">
-                <h1 class="hero-title"><span class="hero-title__accent">FIRAT ÜNİVERSİTESİ</span> MÜHENDİSLİKTE 50. YILINDA</h1>
+                <h1 class="hero-title">
+                    <span class="hero-title__accent">FIRAT ÜNİVERSİTESİ</span><br> 
+                    MÜHENDİSLİKTE 50. YILINDA</h1>
                 <p class="hero-paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Purus semper vitae neque quam.</p>
                 <button type="button" class="button hero-button">KEŞFET</button>
             </div>
         </section>
         <!-- About us -->
-        <section class="section">
-            <h4>HAKKIMIZDA</h4>
-            <div>
-                <div><img src="" alt="" width="" /></div>
-                <div>
-                    <h5>HAKKIMIZDA HAKKIMIZDA HAKKIMIZDA</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Turpis ut vitae tellus neque,
-                    neque semper sit feugiat cursus. Facilisi
-                    egestas diam tristique non ut ut ante urna
-                    sed. Ornare viverra cras quisque porta
-                    eleifend eget enim. Id amet libero et odio
-                    pellentesque purus aliquam, nulla lectus.
-                    Eu in porta donec at mattis in ut.
-                    Lorem adipiscing sit placerat dolor congue
-                    vel ante. Semper amet in ultricies auctor
-                    pretium at.</p>
-                    <button>Keşfet</button>
+        <section class="section team">
+            <div class="container">
+                <h4 class="section-title">HAKKIMIZDA</h4>
+                <div class="team-container">
+                    <div class="team-image"><img src="./images/team.jpg" alt="team" width="441" /></div>
+                    <div class="team-thumb">
+                        <h5 class="team-title">HAKKIMIZDA HAKKIMIZDA HAKKIMIZDA</h5>
+                        <p class="team-paragraphe">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Turpis ut vitae tellus neque,
+                            neque semper sit feugiat cursus. Facilisi
+                            egestas diam tristique non ut ut ante urna
+                            sed. Ornare viverra cras quisque porta
+                            eleifend eget enim. Id amet libero et odio
+                            pellentesque purus aliquam, nulla lectus.
+                            Eu in porta donec at mattis in ut.
+                            Lorem adipiscing sit placerat dolor congue
+                            vel ante. Semper amet in ultricies auctor
+                            pretium at.</p>
+                        <button type="button" class="button team-button">
+                            <div class="team-button__thumb"></div> Keşfet</button>
+                    </div>
                 </div>
             </div>
             <!-- <ul>
@@ -136,14 +141,20 @@
         </section>
         <!-- Fast access -->
         <section class="section">
-            <h3>HIZLI ERİŞİM</h3>
-            <ul>
-                <li><a href="">Etkinlikler</a></li>
-                <li><a href="">e-Hizmetler</a></li>
-                <li><a href="">Fırat Üniversitesi</a></li>
-                <li><a href="">Akademik Takvim</a></li>
-                <li><a href="">Üniversite Evi</a></li>
-            </ul>
+            <div class="container access-container">
+                <a class="acces-title">HIZLI ERİŞİM
+                    <svg class="acces-icon" width="17" height="24">
+                        <use href="./images/symbol-defs.svg#icon-play"></use>
+                    </svg>
+                </a>
+                <ul class="access-list">
+                    <li class="access-item"><a href="#" class="access-link">Etkinlikler</a></li>
+                    <li class="access-item"><a href="#" class="access-link">e-Hizmetler</a></li>
+                    <li class="access-item"><a href="#" class="access-link">Fırat Üniversitesi</a></li>
+                    <li class="access-item"><a href="#" class="access-link">Akademik Takvim</a></li>
+                    <li class="access-item"><a href="#" class="access-link">Üniversite Evi</a></li>
+                </ul>
+            </div>
         </section>
         <!-- News -->
         <section class="section">
@@ -192,52 +203,72 @@
             </ul>
         </section>
         <!-- About IT industry -->
-        <section class="section">
-            <div><img src="" alt=""></div>
-            <div>
-                <h2>BT Çözüm Endüstrisini Geri Tutan Nedir?</h2>
-                <p>Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın yenilenmesiyle
-                kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest
-                metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın
-                yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir
-                serbest metindir.</p>
+        <section class="section about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="./images/firat2.jpg" alt="firat" width="759">
+                    <!-- <button class="about-button"> -->
+                        <svg class="about-icon" width="100" height="100">
+                            <use href="./images/symbol-defs.svg#icon-pause"></use>
+                        </svg>
+                    <!-- </button> -->
+                </div>
+                <div class="about-thumb">
+                    <h2 class="about-title">BT Çözüm Endüstrisini Geri Tutan Nedir?</h2>
+                    <p class="about-paragraphe">Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın
+                        yenilenmesiyle
+                        kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest
+                        metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum,
+                        kopyalamanın
+                        yenilenmesiyle kullanılan basit bir serbest metindir.Lorem ipsum, kopyalamanın yenilenmesiyle kullanılan basit
+                        bir
+                        serbest metindir.</p>
+                </div>
             </div>
         </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <p>ERİŞİMLER</p>
-                <ul>
-                    <li>Ana Sayfa</li>
-                    <li>Fakülteler</li>
-                    <li>Bölümler</li>
-                    <li>Yönetim</li>
-                    <li>Kurul</li>
+    <footer class="page-footer">
+        <div class="container footer-nav">
+            <div class="access-nav__thumb">
+                <p class="footer-nav__title">ERİŞİMLER</p>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">Ana Sayfa</li>
+                    <li class="footer-nav__item">Fakülteler</li>
+                    <li class="footer-nav__item">Bölümler</li>
+                    <li class="footer-nav__item">Yönetim</li>
+                    <li class="footer-nav__item">Kurul</li>
                 </ul>
             </div>
-            <div>
-                <p>WEB SİTE SORUMLULARI</p>
-                <ul>
-                    <li>FATİH ÖZYURT fatihozyurt@firat.edu.tr</li>
-                    <li>ABDULLAH AKTAŞ 200525002@firat.edu.tr</li>
+            <div class="mail-nav">
+                <p class="footer-nav__title">WEB SİTE SORUMLULARI</p>
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">FATİH ÖZYURT <br> fatihozyurt@firat.edu.tr</li>
+                    <li class="footer-nav__item">ABDULLAH AKTAŞ <br> 200525002@firat.edu.tr</li>
                 </ul>
             </div>
-            <div>
-                <p>KONUM</p>
-                <p>Fakülteler</p>
-                <p>Üniversite Mah. Zübeyde Hanım Cad. Elazığ / Merkez</p>
+            <div class="univ-nav">
+                <p class="footer-nav__title">KONUM</p>
+                <p class="footer-nav__item">Üniversite Mah. Zübeyde <br> Hanım Cad. Elazığ / Merkez</p>
             </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <div class="logo-thumb">
+                <svg class="logo-icon" width="138" height="130">
+                    <use href="./images/symbol-defs.svg#icon-firatlogo"></use>
+                </svg>
+            </div>
+            <ul class="sites">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
             </ul>
         </div>
-        <div>
-            <map name=""></map>
+        <div class="location-thumb">
+            <img src="./images/map.jpg" alt="location" width="625">
+            <svg class="map-icon" width="32" height="33">
+                <use href="./images/symbol-defs.svg#icon-map"></use>
+            </svg>
+            <span class="map-title">Mühendislik Fakültesi</span>
         </div>
     </footer>
 </body>
