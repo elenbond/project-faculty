@@ -16,63 +16,73 @@
 <body>
     <!--Header-->
     <header class="page-header">
-        <nav class="site-nav">
-            <ul class="site-nav__list accent-list">
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">ANA SAYFA</a></li>
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">HAKKIMIZDA</a></li>
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">YÖNETİM</a></li>
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">PERSONEL</a></li>
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">KURULLAR</a></li>
-                <li class="site-nav__item accent-list__item">
-                    <a href="#" class="site-nav__link accent-list__link">MÜDEK</a></li>
-            </ul>
-            <ul class="site-nav__list">
-                <li class="site-nav__item"><a href="#" class="site-nav__link">BÖLÜMLERİMİZ</a></li>
-                <li class="site-nav__item"><a href="#" class="site-nav__link">DOKÜMANLAR</a></li>
-                <li class="site-nav__item"><a href="#" class="site-nav__link">İLETİŞİM</a></li>
-                <li class="site-nav__item"><a href="#" class="site-nav__link">TR/EN</a></li>
-                <li class="site-nav__item">
-                    <svg class="site-nav__icon" width="23" height="20">
-                        <use href="./images/symbol-defs.svg#icon-ei_search"></use>
-                    </svg></li>
-            </ul>
-        </nav>
-        <div class="logo-container">
-            <div class="logo">
-                <a href="#" class="logo__name">MÜHENDİSLİK <span>FAKÜLTESİ</span></a>
+        <div class="container container-header">
+            <nav class="site-nav">
+                <ul class="site-nav__list accent-list">
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">ANA SAYFA</a>
+                    </li>
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">HAKKIMIZDA</a>
+                    </li>
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">YÖNETİM</a>
+                    </li>
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">PERSONEL</a>
+                    </li>
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">KURULLAR</a>
+                    </li>
+                    <li class="site-nav__item accent-list__item">
+                        <a href="#" class="site-nav__link accent-list__link">MÜDEK</a>
+                    </li>
+                </ul>
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a href="#" class="site-nav__link">BÖLÜMLERİMİZ</a></li>
+                    <li class="site-nav__item"><a href="#" class="site-nav__link">DOKÜMANLAR</a></li>
+                    <li class="site-nav__item"><a href="#" class="site-nav__link">İLETİŞİM</a></li>
+                    <li class="site-nav__item"><a href="#" class="site-nav__link">TR/EN</a></li>
+                    <li class="site-nav__item">
+                        <svg class="site-nav__icon" width="23" height="20">
+                            <use href="./images/symbol-defs.svg#icon-ei_search"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="#" class="logo__name">MÜHENDİSLİK <span>FAKÜLTESİ</span></a>
+                </div>
+                <div class="logo-figure"></div>
             </div>
-            <div class="logo-figure"></div>
         </div>
+        
     </header>
     <!-- Main -->
     <main>
         <!-- Hero -->
         <section class="section hero">
-            <div class="container">
+            <div class="container container-hero">
                 <h1 class="hero-title">
                     <span class="hero-title__accent">FIRAT ÜNİVERSİTESİ</span><br> 
                     MÜHENDİSLİKTE 50. YILINDA</h1>
                 <p class="hero-paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Purus semper vitae neque quam.</p>
                 <button type="button" class="button hero-button">KEŞFET</button>
+                <svg class="hero-icon__right" width="30" height="24">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right-filled"></use>
+                </svg>
+                <svg class="hero-icon__left" width="30" height="24">
+                    <use href="./images/symbol-defs.svg#icon-arrow-left-filled"></use>
+                </svg>
             </div>
-            <svg class="hero-icon__right" width="30" height="24">
-                <use href="./images/symbol-defs.svg#icon-arrow-right-filled"></use>
-            </svg>
-            <svg class="hero-icon__left" width="30" height="24">
-                <use href="./images/symbol-defs.svg#icon-arrow-left-filled"></use>
-            </svg>
         </section>
         <!-- About us -->
         <section class="section team">
-            <div class="container">
+            <div class="container container-team">
                 <h4 class="section-title">HAKKIMIZDA</h4>
-                <div class="team-container">
+                <div class="team-descr">
                     <div class="team-image"><img src="./images/team.jpg" alt="team" width="441" /></div>
                     <div class="team-thumb">
                         <h5 class="team-title">HAKKIMIZDA HAKKIMIZDA HAKKIMIZDA</h5>
@@ -95,38 +105,39 @@
                             <div class="team-button__thumb"></div><span class="team-button__span">K</span>eşfet</button> -->
                     </div>
                 </div>
-            </div>
-            <div class="plan">
-                <h3 class="plan-title">DUYURULAR</h3>
-                <ul class="plan-list">
-                    <li class="plan-item">
-                        <p class="plan-date">Mart 12, 2022</p>
-                        <p class="plan-info">Erasmus Öğrenim Hareketliliği
-                            başvuruları başladı.</p>
-                    </li>
-                    <li class="plan-item">
-                        <p class="plan-date">Mart 12, 2022</p>
-                        <p class="plan-info">Erasmus Öğrenim Hareketliliği
-                            başvuruları başladı. </p>
-                    </li>
-                    <li class="plan-item">
-                        <p class="plan-date">Mart 12, 2022</p>
-                        <p class="plan-info">Erasmus Öğrenim Hareketliliği
-                            başvuruları başladı. </p>
-                    </li>
-                    <li class="plan-item">
-                        <p class="plan-date">Mart 12, 2022</p>
-                        <p class="plan-info">Erasmus Öğrenim Hareketliliği
-                            başvuruları başladı. </p>
-                    </li>
-                    <li class="plan-item">
-                        <a class="plan-link" href="#">Tümünü Göster
-                            <svg class="plan-icon" width="20" height="18">
-                                <use href="./images/symbol-defs.svg#icon-play-red"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            
+                <div class="plan">
+                    <h3 class="plan-title">DUYURULAR</h3>
+                    <ul class="plan-list">
+                        <li class="plan-item">
+                            <p class="plan-date">Mart 12, 2022</p>
+                            <p class="plan-info">Erasmus Öğrenim Hareketliliği
+                                başvuruları başladı.</p>
+                        </li>
+                        <li class="plan-item">
+                            <p class="plan-date">Mart 12, 2022</p>
+                            <p class="plan-info">Erasmus Öğrenim Hareketliliği
+                                başvuruları başladı. </p>
+                        </li>
+                        <li class="plan-item">
+                            <p class="plan-date">Mart 12, 2022</p>
+                            <p class="plan-info">Erasmus Öğrenim Hareketliliği
+                                başvuruları başladı. </p>
+                        </li>
+                        <li class="plan-item">
+                            <p class="plan-date">Mart 12, 2022</p>
+                            <p class="plan-info">Erasmus Öğrenim Hareketliliği
+                                başvuruları başladı. </p>
+                        </li>
+                        <li class="plan-item">
+                            <a class="plan-link" href="#">Tümünü Göster
+                                <svg class="plan-icon" width="20" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-play-red"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- Fast access -->
@@ -148,7 +159,7 @@
         </section>
         <!-- News -->
         <section class="section news">
-            <div class="container">
+            <div class="container container-news">
                 <h3 class="section-title">HABERLER</h3>
                 <ul class="news-list">
                     <li class="news-item">
@@ -248,13 +259,13 @@
                         </div>
                     </li>
                 </ul>
+                <svg class="news-icon__left" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+                </svg>
+                <svg class="news-icon__right" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                </svg>
             </div>
-            <svg class="news-icon__left" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
-            </svg>
-            <svg class="news-icon__right" width="30" height="30">
-                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
-            </svg>
         </section>
         <!-- About IT industry -->
         <section class="section about">
@@ -281,73 +292,75 @@
     </main>
     <!-- Footer -->
     <footer class="page-footer">
-        <div class="container footer-nav">
-            <div class="access-nav__thumb">
-                <p class="footer-nav__title">ERİŞİMLER</p>
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item">Ana Sayfa</li>
-                    <li class="footer-nav__item">Fakülteler</li>
-                    <li class="footer-nav__item">Bölümler</li>
-                    <li class="footer-nav__item">Yönetim</li>
-                    <li class="footer-nav__item">Kurul</li>
+        <div class="container container-footer">
+            <div class="footer-nav">
+                <div class="access-nav__thumb">
+                    <p class="footer-nav__title">ERİŞİMLER</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">Ana Sayfa</li>
+                        <li class="footer-nav__item">Fakülteler</li>
+                        <li class="footer-nav__item">Bölümler</li>
+                        <li class="footer-nav__item">Yönetim</li>
+                        <li class="footer-nav__item">Kurul</li>
+                    </ul>
+                </div>
+                <div class="mail-nav">
+                    <p class="footer-nav__title">WEB SİTE SORUMLULARI</p>
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">FATİH ÖZYURT <br> fatihozyurt@firat.edu.tr</li>
+                        <li class="footer-nav__item">ABDULLAH AKTAŞ <br> 200525002@firat.edu.tr</li>
+                    </ul>
+                </div>
+                <div class="univ-nav">
+                    <p class="footer-nav__title">KONUM</p>
+                    <p class="footer-nav__item">Üniversite Mah. Zübeyde <br> Hanım Cad. Elazığ / Merkez</p>
+                </div>
+                <div class="logo-thumb">
+                    <a href="http://mf.firat.edu.tr/tr/announcements-all/31">
+                        <img src="./images/firatlogo.svg" alt="logo" width="138" height="130">
+                        <!-- <svg class="logo-icon" width="138" height="130">
+                                <use href="./images/firatlogo.svg"></use>
+                            </svg> -->
+                    </a>
+                </div>
+                <ul class="sites">
+                    <li class="sites-icon">
+                        <a href="#" class="sites-link">
+                            <svg class="icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sites-icon">
+                        <a href="#" class="sites-link">
+                            <svg class="icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sites-icon">
+                        <a href="#" class="sites-link">
+                            <svg class="icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sites-icon">
+                        <a href="#" class="sites-link">
+                            <svg class="icon" width="27" height="27">
+                                <use href="./images/symbol-defs.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="mail-nav">
-                <p class="footer-nav__title">WEB SİTE SORUMLULARI</p>
-                <ul class="footer-nav__list">
-                    <li class="footer-nav__item">FATİH ÖZYURT <br> fatihozyurt@firat.edu.tr</li>
-                    <li class="footer-nav__item">ABDULLAH AKTAŞ <br> 200525002@firat.edu.tr</li>
-                </ul>
+            <div class="location-thumb">
+                <img src="./images/map.jpg" alt="location" width="625">
+                <svg class="map-icon" width="32" height="33">
+                    <use href="./images/symbol-defs.svg#icon-map"></use>
+                </svg>
+                <a href="http://mf.firat.edu.tr/tr/announcements-all/31" class="map-title">Mühendislik Fakültesi</a>
             </div>
-            <div class="univ-nav">
-                <p class="footer-nav__title">KONUM</p>
-                <p class="footer-nav__item">Üniversite Mah. Zübeyde <br> Hanım Cad. Elazığ / Merkez</p>
-            </div>
-            <div class="logo-thumb">
-                <a href="http://mf.firat.edu.tr/tr/announcements-all/31">
-                <img src="./images/firatlogo.svg" alt="logo" width="138" height="130">
-                <!-- <svg class="logo-icon" width="138" height="130">
-                    <use href="./images/firatlogo.svg"></use>
-                </svg> -->
-                </a>
-            </div>
-            <ul class="sites">
-                <li class="sites-icon">
-                    <a href="#" class="sites-link">
-                        <svg class="icon" width="27" height="27">
-                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sites-icon">
-                    <a href="#" class="sites-link">
-                        <svg class="icon" width="27" height="27">
-                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sites-icon">
-                    <a href="#" class="sites-link">
-                        <svg class="icon" width="27" height="27">
-                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="sites-icon">
-                    <a href="#" class="sites-link">
-                        <svg class="icon" width="27" height="27">
-                            <use href="./images/symbol-defs.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="location-thumb">
-            <img src="./images/map.jpg" alt="location" width="625">
-            <svg class="map-icon" width="32" height="33">
-                <use href="./images/symbol-defs.svg#icon-map"></use>
-            </svg>
-            <a href="http://mf.firat.edu.tr/tr/announcements-all/31" class="map-title">Mühendislik Fakültesi</a>
         </div>
     </footer>
 </body>
