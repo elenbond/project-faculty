@@ -81,14 +81,25 @@ body {
 .site-nav__item:nth-child(2){
     margin-right: 540px;
 }
+.site-nav__item:nth-child(4) {
+    margin-left: 35px;
+}
 .site-nav__item:last-child{
     margin-right: 0;
+    margin-left: 30px;
 }
 .accent-list__item:nth-child(2) {
     margin-right: 35px;
 }
 .accent-list__item:nth-child(3){
     margin-right: 490px;
+}
+.accent-list__item:last-child,
+.accent-list__item:nth-child(4){
+    margin-left: 0;
+}
+.site-nav__icon{
+    cursor: pointer;
 }
 .site-nav__link{
     font-family: 'Lato';
@@ -123,6 +134,7 @@ body {
     background-color: var(--title-text-color);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    z-index: 100;
 }
 .logo-figure{
     width: 0;
@@ -130,6 +142,7 @@ body {
     border-left: 147px solid transparent;
     border-right: 147px solid transparent;
     border-top: 27px solid var(--title-text-color);
+    z-index: 100;
 }
 .logo__name{
     font-family: 'Lato';
@@ -141,6 +154,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* Main */
 /* Container */
 .container {
     padding-left: 55px;
@@ -154,7 +168,6 @@ body {
     line-height: 1.2;
     color: var(--primary-text-color);
 }
-/* Main */
 /* Section */
 .section{
     text-align: left;
@@ -181,6 +194,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 0;
 }
 .hero-title{
     font-family: 'Public Sans';
@@ -225,11 +240,22 @@ body {
 .hero-button:focus{
     box-shadow: inset 5px 5px 30px rgba(0, 0, 0, 0.25);
 }
+.hero-icon__right{
+    position: absolute;
+    right: 74px;
+    top: 134px;
+}
+.hero-icon__left{
+    position: absolute;
+    right: 74px;
+    top: 170px;
+}
 /* About us */
 /* Team */
 .team {
     padding-bottom: 80px;
     background-image: url(./images/fon.jpg);
+    position: relative;
 }
 .team-container{
     display: flex;
@@ -292,6 +318,74 @@ body {
     transition: all .85s cubic-bezier(.68, -.55, .265, 1.55);
     transition-duration: 250ms;
 }
+/* Agenda/Plan */
+.plan{
+    position: absolute;
+    right: 74px;
+    top: -66px;
+    display: flex;
+    flex-direction: column;
+    width: 339px;
+}
+.plan-title{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--title-text-color);
+    padding-top: 21px;
+    padding-left: 26px;
+    padding-bottom: 20px;
+    background-color: var(--accent-color);
+}
+.plan-list{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-background-color);
+}
+.plan-item{
+    padding-top: 27px;
+    padding-left: 25px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #000;
+}
+.plan-item:last-child{
+    border-bottom: none;
+}
+.plan-date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--fourth-text-color);
+}
+.plan-info{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--third-text-color);
+    margin-top: 8px;
+}
+.plan-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+}
+.plan-icon{
+    fill: var(--accent-color);
+    width: 20px;
+    height: 18px;
+    margin-left: 5px;
+}
 /* Fast access */
 .access-container{
     display: flex;
@@ -348,6 +442,105 @@ body {
     opacity: 1;
 }
 /* News */
+.news{
+    padding-bottom: 52px;
+    background-color: var(--title-text-color);
+}
+.news-list{
+    display: flex;
+    margin-top: 36px;
+}
+.news-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 27px;
+    width: 302px;
+    box-shadow: 0px 10px 24px rgba(55, 55, 55, 0.74);
+    border-radius: 30px;
+}
+.news-item:hover{
+    box-shadow: 0px 10px 24px rgba(55, 55, 55, 0.74);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.news-item:hover .news-info{
+    border: 1px solid #000000;
+    border-top: none;
+}
+.news-image__thumb{
+    /* background: rgba(190, 13, 13, 0.3); */
+    background-image: linear-gradient(to right, rgba(190, 13, 13, 0.3), url(./images/work.jpg));
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.news-image{}
+.news-icon{
+    position: absolute;
+    top: 93px;
+    left: 150px;
+}
+.news-icon__arrow{
+    position: absolute;
+    top: 0;
+    right: 91px;
+}
+.news-image__title{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 83px;
+    background: #EEEEEE;
+    border-radius: 0px 30px 0px 0px;
+}
+.news-image__span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+}
+.news-info{
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-right: 21px;
+    padding-bottom: 23px;
+    border-radius: 0 0 30px 30px;
+    background-color: var(--title-text-color);
+}
+.news-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--second-accent-color);
+}
+.news-paragraphe{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+}
+.news-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--second-accent-color);
+    display: flex;
+    margin-top: 20px;
+}
 /* About */
 .about{
     padding-top: 73px;
@@ -405,6 +598,7 @@ body {
     padding-top: 52px;
     padding-right: 15px;
     background-color: var(--footer-background-color);
+    position: relative;
 }
 .footer-nav__title {
     font-family: 'Montserrat';
@@ -449,8 +643,30 @@ body {
     margin-top: 15px;
 }
 /* Logo */
-.logo-thumb{}
+.logo-thumb{
+    position: absolute;
+    left: 44px;
+    bottom: 37px;
+}
 .logo-icon{}
+/* Sites */
+.sites{
+    display: flex;
+    position: absolute;
+    bottom: 49px;
+    right: 51px;
+}
+.sites-icon{
+    margin-right: 12px;
+}
+.sites-icon:last-child {
+    margin-right: 0;
+}
+.sites-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Location */
 .location-thumb{
     position: relative;
